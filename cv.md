@@ -27,15 +27,6 @@ I am 20 years old, I am studying to be a frontend developer. I really need an ac
 
 ---
 
-## Code Examples
-javascript
-function bmi(weight, height) {
-  const bmi = weight / (height * height);
-  return bmi <= 18.5 ? 'Underweight' : bmi <= 25 ? 'Normal' : bmi <= 30 ? 'Overweight' : 'Obese';
-}
-
----
-
 ## Education
 
 - Belarusian National Technical University
@@ -46,4 +37,13 @@ JavaScript
 
 ## Languages
 - Russian - native speaker.
-- English - A2 (B1 in process…) 
+- English - A2 (B1 in process…)
+
+---
+
+## Code Examples
+function bmi(weight, height) {
+ - const bmi = weight / (height * height);
+ - return bmi <= 18.5 ? 'Underweight' : bmi <= 25 ? 'Normal' : bmi <= 30 ? 'Overweight' : 'Obese';
+ - }
+

@@ -1,2 +1,2 @@
-# https://Kristina0606.github.io/rsschool-cv/shelter-part2/index.html
+# https://Kristina0606.github.io/rsschool-cv/shelter-part2/
 

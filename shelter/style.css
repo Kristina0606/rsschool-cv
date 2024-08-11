@@ -71,18 +71,22 @@ a {
     text-decoration: none;
 }
 
+
+
 .app-header {
-    padding-top: 30px;
+    width: 100%;
+    padding: 30px 40px 0px;
     background-image: url(./images/start-screen-gradient-background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
 .app-header__components {
     display: flex;
-    gap: 573px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding-bottom: 90px;
 }
 
 .app-header__components__set-of-links {
@@ -122,18 +126,25 @@ a {
 
 
 
+.mobile-buttons {
+    display: none;
+}
+
+
 .first-page__content {
     display: flex;
     justify-content: center;
-    padding-top: 90px;
     gap: 42px;
+   
 }
 
+
 .first-page__content__left {
+    padding-top: 163px;
     display: flex;
     flex-direction: column;
     gap: 42px;
-    margin-top: 163px;
+    
 }
 
 .app-header__content__left__subtitle {
@@ -225,8 +236,7 @@ a {
 
 .cards-container {
     display: flex;
-    gap: 53px;
-    justify-content: center;
+    gap: 7px;
     align-items: center;
 }
 
@@ -255,7 +265,22 @@ a {
     transition: transform 0.3s;
 }
 
-.card:hover {
+.katrine-card, .jennifer-card , .woody-card {
+    width: 270px;
+    height: 435px;
+    background: rgb(250, 250, 250);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    transition: transform 0.3s;}
+
+
+
+.katrine-card:hover,
+.jennifer-card:hover,
+.woody-card:hover {
     color: white;
     transform: scale(1.1);
 }
@@ -330,7 +355,7 @@ a {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 80px 182px 100px 182px;
+    padding: 80px 182px 100px;
 }
 
 .right-cont {
@@ -393,11 +418,15 @@ a {
     background-size: cover;
 }
 
-.footer-content {
+.footer-text {
     display: flex;
     gap: 160px;
-    justify-content: center;
-    padding-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px 0px;
 }
 
 .footer-content-left {
@@ -428,4 +457,252 @@ a {
     display: flex;
     gap: 20px;
     align-items: center;
+}
+
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .app-header__components {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+
+    .first-page__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 42px;
+    }
+
+    .first-page__content__left {
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+        padding-top: 0;
+        margin-top: 60px;
+    }
+
+    .puppy-img {
+        width: 569px;
+        height: 593px;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .third-page_content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 60px;
+        padding-top: 80px;
+        padding-bottom: 100px;
+        padding: 80px 30px 100px;
+    }
+
+    .cards-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container-btn {
+        border: none;
+        cursor: pointer;
+        width: 52px;
+        height: 52px;
+        background: rgb(246, 246, 246);
+    }
+
+    .cards {
+        display: flex;
+        gap: 40px;
+    }
+
+    .woody-card {
+        position: absolute;
+        left: -9999px;
+    }
+
+    .fifth-page-content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+        align-items: center;
+        padding: 40px 40px 0px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .app-header__components {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+
+    .app-header__content__left__title {
+        font-size: 25px;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .app-header__content__left__subtitle {
+        text-align: center;
+    }
+
+    .app-header__components__set-of-links {
+        position: absolute;
+        left: -9999px;
+    }
+
+    .first-page__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 42px;
+    }
+
+    .first-page__content__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 42px;
+        padding-top: 0;
+    }
+
+    .puppy-img {
+        width: 260px;
+        height: 271px;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .third-page_content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 60px;
+        padding-top: 80px;
+        padding-bottom: 100px;
+        padding: 80px 30px 100px;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container-btn {
+        border: none;
+        cursor: pointer;
+        width: 52px;
+        height: 52px;
+        background: rgb(246, 246, 246);
+    }
+
+    .cards {
+        display: flex;
+        gap: 40px;
+    }
+
+    .woody-card {
+        position: absolute;
+        left: -9999px;
+    }
+
+    .jennifer-card {
+        position: absolute;
+        left: -9899px;
+    }
+
+    .icon-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        column-gap: 60px;
+        box-sizing: content-box;
+        max-width: 1026px;
+    }
+
+    .icon-fig {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    .mobile-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .dekstop-btn {
+        display: none;
+    }
+
+    .fifth-page-content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 42px, 10px, 42px;
+    }
+
+    .donation-dog-img {
+        width: 260px;
+        height: 135px;
+    }
+
+    .fifth-page-button {
+        gap: 5px;
+        width: 281px;
+            height: 43px;
+            
+            font-size: 15px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 40px 0px;
+    }
+
+    .footer-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }

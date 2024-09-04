@@ -85,13 +85,15 @@ a {
     color: rgb(84, 84, 84);
 }
 
+.burger-btn {
+    display: none;
+}
+
 .app-header__components {
     display: flex;
-    gap: 573px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 30px 40px 30px 30px;
-
+    padding: 30px 40px 30px 40px;
 }
 
 .app-header__components__set-of-links {
@@ -219,8 +221,6 @@ a {
 
 
 
-
-
 .footer-page {
     background-image: url(./images/footer-gradient-background.jpeg);
     background-repeat: no-repeat;
@@ -262,4 +262,187 @@ a {
     display: flex;
     gap: 20px;
     align-items: center;
+}
+
+.footer-text {
+    display: flex;
+    gap: 160px;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .app-header__components {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+   .fifth-page-content {
+       display: flex;
+       flex-direction: column-reverse;
+       align-items: center;
+   }
+
+   .last-card {
+       position: absolute;
+       left: -9999px;
+   }
+
+   .pred-last-card {
+       position: absolute;
+       left: -9999px;
+   }
+
+   .footer-content {
+       display: flex;
+       flex-direction: column;
+       gap: 65px;
+       align-items: center;
+       padding: 40px 40px 0px;
+   }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .app-header__components {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .burger-btn {
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 22px;
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+            z-index: 2;
+    
+        }
+    
+        .btn-span {
+    
+            position: absolute;
+            width: 30px;
+            border: 2px solid rgb(0, 0, 0);
+            right: 0;
+            transition: transform .5s;
+    
+        }
+    
+        .btn-span:nth-child(1) {
+            transform: translateY(-11px);
+        }
+    
+        .btn-span:nth-child(3) {
+            transform: translateY(10px);
+        }
+                a {
+                    font-size: 32px;
+                    font-weight: 400;
+                    line-height: 160%;
+                }
+
+        .app-header__components__set-of-links {
+            position: fixed;
+            right: -320px;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding-top: 248px;
+            background-color: white;
+            width: 320px;
+            height: 823px;
+            transition: transform .5s;
+    
+        }
+    
+        .ind-link {
+            border-bottom: 3px solid rgb(241, 205, 179);
+            display: flex;
+            width: 128px;
+            flex-direction: column-reverse;
+            position: relative;
+        }
+    
+    
+        .app-header.open .app-header__components__set-of-links {
+            transform: translateX(-100%);
+    
+        }
+    
+        .app-header.open .btn-span:nth-child(1) {
+            transform: rotate(-90.00deg) translateY(-11px);
+        }
+    
+        .app-header.open .btn-span:nth-child(2) {
+            transform: rotate(-90.00deg);
+        }
+    
+        .app-header.open .btn-span:nth-child(3) {
+            transform: rotate(-90.00deg) translateY(11px);
+        }
+
+    .cont-title {
+        font-size: 25px;
+            font-weight: 400;
+            line-height: 130%;
+            letter-spacing: 6%;
+            text-align: center;
+    }
+
+        .pets-card-container {
+            padding: 42px 0 42px;
+        }
+
+        .sophia-card {
+position: absolute;
+    left: -9999px;
+        } 
+
+        .timmy-card {
+position: absolute;
+    left: -9999px;
+        }
+
+        .charly-card {
+position: absolute;
+    left: -9999px;
+        } 
+
+                .last-card {
+                    position: absolute;
+                    left: -9999px;
+                }
+        
+                .pred-last-card {
+                    position: absolute;
+                    left: -9999px;
+                }
+
+        .nav-cards {
+                    display: flex;
+                    gap: 10px;
+                }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 40px 0px;
+        }
+    
+        .footer-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .foot-img {
+            width: 260px;
+            height: 269px;
+        }
 }

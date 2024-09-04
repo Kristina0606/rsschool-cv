@@ -17,9 +17,17 @@
               ><img src="./images/Logo.svg" alt="logo" class="header-img"
             /></a>
           </div>
+          <button class="burger-btn" id="burger-btn">
+            <span class="btn-span"></span><span class="btn-span"></span
+            ><span class="btn-span"></span>
+          </button>
           <div class="app-header__components__set-of-links">
             <div>
-              <a href="#about" class="ind-link">About the shelter</a>
+              <a
+                href="#about"
+                class="ind-link app-header__components__set-of-links__link1"
+                >About the shelter</a
+              >
             </div>
             <div>
               <a
@@ -74,18 +82,22 @@
         <div class="about" id="about">
           <div class="container1">
             <div class="container1-left">
-              <img src="./images/about-pets.png" alt="about-pets-img" />
+              <img
+                src="./images/about-pets.png"
+                alt="about-pets-img"
+                class="about-img"
+              />
             </div>
             <div class="container1-right">
-              <h2>About the shelter “<br />Cozy House”</h2>
-              <p>
+              <h2 class="h2-about">About the shelter “<br />Cozy House”</h2>
+              <p class="p-about">
                 Currently we have 121 dogs and 342 cats on our hands and<br />
                 statistics show that only 20% of them will find a family. The<br />
                 others will continue to live with us and will be waiting for a
                 lucky<br />
                 chance to become dearly loved.
               </p>
-              <p>
+              <p class="p-about">
                 We feed our wards with the best food and make sure that they<br />do
                 not get sick, feel comfortable (including psychologically)
                 and<br />
@@ -161,7 +173,11 @@
                 </button>
               </div>
             </div>
-            <button class="button2" type="button">
+            <button
+              class="button2"
+              type="button"
+              onclick="window.location.href='index2.html';"
+            >
               <span>Get to know the rest</span>
             </button>
           </div>
@@ -321,10 +337,15 @@
           </div>
 
           <div class="footer-content-right">
-            <img src="./images/footer-puppy.png" alt="puppy-img" />
+            <img
+              src="./images/footer-puppy.png"
+              alt="puppy-img"
+              class="foot-img"
+            />
           </div>
         </div>
       </footer>
     </div>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

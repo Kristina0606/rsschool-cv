@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setLinks.addEventListener("click", function (event) {
     event.stopPropagation();
-    appHeader.classList.remove("open");
+    appHeader.classList.toggle("open");
   });
 });
 

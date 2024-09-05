@@ -50,6 +50,26 @@ document.addEventListener("DOMContentLoaded", function () {
       sliderLine.style.left = -offset + "px";
     }
   });
+
+  document
+    .querySelector(".mobile-btn-next")
+    .addEventListener("click", function () {
+      offset = offset + 270;
+      if (offset > 1350) {
+        offset = 0;
+      }
+      sliderLine.style.left = -offset + "px";
+    });
+
+  document
+    .querySelector(".mobile-btn-back")
+    .addEventListener("click", function () {
+      offset = offset - 270;
+      if (offset < 0) {
+        offset = 1350;
+      }
+      sliderLine.style.left = -offset + "px";
+    });
 });
 
 document.addEventListener("click", (e) => {

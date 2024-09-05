@@ -743,8 +743,6 @@ a {
         width: 100%;
     }
 
-    
-
         .cards-slider {
             width: 270px;
             height: 500px;
@@ -765,16 +763,6 @@ a {
     .cards {
         display: flex;
         gap: 40px;
-    }
-
-    .woody-card {
-        position: absolute;
-        left: -9999px;
-    }
-
-    .jennifer-card {
-        position: absolute;
-        left: -9899px;
     }
 
     .icon-image {

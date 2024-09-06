@@ -148,14 +148,48 @@ a {
     gap: 20px;
 }
 
-.navBtn {
+.nav-double-left {
     cursor: pointer;
     transition: transform 0.3s;
+    transform: rotate(180deg);
 }
 
-.navBtn:hover {
-    transform: scale(1.1);
+.nav-double-left:hover {
+    transform: scale(1.1) rotate(180deg);
 }
+
+.navBtn {
+    cursor: pointer;
+    transition: transform 0.3s ;
+}
+
+
+.navBtn:hover {
+    transform: scale(1.1) ;
+}
+
+.nav-left {
+    cursor: pointer;
+    transition: transform 0.3s;
+    transform: rotate(180deg);
+}
+
+.nav-left:hover {
+    transform: scale(1.1) rotate(180deg);
+}
+
+.page-number {
+    display: inline-block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 100px;
+           
+            background: rgb(241, 205, 179);
+}
+
+
 
 .pets-card-container {
     display: flex;
@@ -397,20 +431,7 @@ a {
             padding: 42px 0 42px;
         }
 
-        .sophia-card {
-position: absolute;
-    left: -9999px;
-        } 
-
-        .timmy-card {
-position: absolute;
-    left: -9999px;
-        }
-
-        .charly-card {
-position: absolute;
-    left: -9999px;
-        } 
+        
 
                 .last-card {
                     position: absolute;

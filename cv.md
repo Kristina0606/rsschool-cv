@@ -52,8 +52,20 @@ I am 20 years old, I am studying to be a frontend developer. I really need an ac
 
 ## Code Examples
 
-function bmi(weight, height) {
-
-- const bmi = weight / (height \* height);
-- return bmi <= 18.5 ? 'Underweight' : bmi <= 25 ? 'Normal' : bmi <= 30 ? 'Overweight' : 'Obese';
-- }
+function findAllOccurrences(arr, item) {
+let count = 0;
+const recFunc = (i) => {
+if (i === arr.length) {
+return count;
+}
+if (arr[i] === item) {
+count += 1;
+recFunc(i + 1);
+} else {
+return recFunc(i + 1);
+}
+return count;
+};
+recFunc(0);
+return count;
+}

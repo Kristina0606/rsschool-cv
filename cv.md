@@ -7,6 +7,7 @@
 - **Phone:** +375 44 546-02-43
 - **E-mail:** krisbubenka@icloud.com
 - **GitHub:** [Kristina0606](https://github.com/Kristina0606)
+- **Codewars:** https://www.codewars.com/users/rsschool_13234b300df92067
 
 ---
 

@@ -1,0 +1,161 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="navigate">
+          <a href="#about">About me</a>
+          <a href="#contact">Contacts</a>
+          <a href="#skills">Skills</a>
+          <a href="#strength">Strengths</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+        </nav>
+      </header>
+      <main class="main-content">
+        <div class="left-section">
+          <img
+            src="./images/IMG_1104.HEIC"
+            alt="ava"
+            width="300"
+            height="400"
+            class="avatar">
+          <div class="contact-info" id="contact">
+            <h2>Contact</h2>
+            <ul>
+              <li>Phone:<a href="#"> +375 44 546-02-43</a></li>
+              <li>E-mail: <a href="#">krisbubenka@icloud.com</a></li>
+              <li>Address: Gomel, Belarus</li>
+              <li>
+                Linkedin:
+                <a
+                  href="https://www.linkedin.com/in/kristina-buben-806658271/"
+                  target="_blank"
+                  >Kristina Buben</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="education-info" id="education">
+            <h2>Education</h2>
+            <ul class="education-info-ul">
+              <li>
+                Belarusian National Technical University Specialty: Information
+                technology software
+              </li>
+              <li>
+                IT-Academy: WEBSITE DEVELOPMENT WITH HTML, CSS and JAVASCRIPT
+              </li>
+              <li>IT-Academy: WEB APPLICATION DEVELOPMENT WITH JAVASCRIPT</li>
+              <li>RS pre-school(JS)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="main-info">
+            <h1>Kristina Buben</h1>
+            <p>Frontend Developer</p>
+          </div>
+          <div class="about-me-info" id="about">
+            <h2>About me</h2>
+            <p>
+              I am 20 years old, I am studying to be a frontend developer. I
+              really need an activity where I can develop throughout my life.
+              That’s why I’m here. My goal is to learn about development on the
+              front lines.
+            </p>
+          </div>
+          <div class="skills-info" id="skills">
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS (Bootstrap, SASS/SCSS, BEM)</li>
+              <li>
+                JavaScript (Fundamentals, ES6+, DOM, JSON, Asynchronous
+                JavaScript)
+              </li>
+              <li>Git/GitHub</li>
+              <li>English - A2 (B1 in process…)</li>
+            </ul>
+          </div>
+          <div class="strengths-info" id="strength">
+            <h2>Skills Strengths</h2>
+            <ul>
+              <li>Quick learner</li>
+              <li>Full immersion in the essence of the problems</li>
+              <li>Diligence</li>
+              <li>Team playing</li>
+              <li>Keep learning</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Code example</h2>
+            <code>
+              function findAllOccurrences(arr, item) { <br>let count = 0;
+              <br>const recFunc = (i) =&gt; { <br>if (i === arr.length) {
+              <br>return count; <br>} <br>if (arr[i] === item) {
+              <br>count += 1; <br>recFunc(i + 1); <br>
+              } else { <br>return recFunc(i + 1); <br>
+              } <br>return count; }; <br>recFunc(0); <br>return count;
+              <br>
+              }
+            </code>
+          </div>
+          <div class="projects-info" id="projects">
+            <h2>My projects</h2>
+            <a
+              href="https://github.com/Kristina0606/ROBO.SCHOOL"
+              target="_blank"
+              >ROBO SCHOOL</a
+            >
+            <a
+              href="https://github.com/Kristina0606/graduate-js-project"
+              target="_blank"
+              >MovieMingle</a
+            >
+            <a
+              href="https://github.com/Kristina0606/rsschool-cv0/tree/shelter-part3"
+              target="_blank"
+              >Shelter</a
+            >
+            <a
+              href="https://rolling-scopes-school.github.io/kristina0606-JSFEPRESCHOOL2024Q2/js30-3.3-random-game/index2.html"
+              target="_blank"
+              >Tic Tac Toe</a
+            >
+            <a
+              href="https://rolling-scopes-school.github.io/kristina0606-JSFEPRESCHOOL2024Q2/js30-2.2-image-gallery/index1.html"
+              target="_blank"
+              >Image gallery API</a
+            >
+          </div>
+        </div>
+      </main>
+      <footer>
+        <a href="https://github.com/Kristina0606" target="_blank">GitHub</a>
+        <p>2024</p>
+        <a
+          href="https://rs.school/courses/javascript-preschool-ru"
+          target="_blank"
+          ><img
+            src="https://rs.school/assets/rss-logo-CM8B7fA7.svg"
+            alt="logo-rs-school"
+            width="100"
+            height="100"></a>
+      </footer>
+    </div>
+  </body>
+</html>
